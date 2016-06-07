@@ -1,0 +1,22 @@
+{
+  "name": "raspberry-pebble",
+  "version": "1.0.0",
+  "description": "How to turn a led using Raspberry and your pebble watch.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bizoru/raspberry-pebble.git"
+  },
+  "author": "Steven Sierra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bizoru/raspberry-pebble/issues"
+  },
+  "homepage": "https://github.com/bizoru/raspberry-pebble",
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
+}
