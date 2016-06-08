@@ -10,7 +10,7 @@ if len(sys.argv) > 1:
 
 # Setup things
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(18,GPIO_OUT)
+GPIO.setup(18,GPIO.OUT)
 
 
 
