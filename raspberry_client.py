@@ -15,7 +15,7 @@ GPIO.setup(18,GPIO.OUT)
 
 
 def get_status():
-    url = "http://{}/status".format(base_url)
+    url = "http://{}/status".format(url)
     r = requests.get(url)
     result = r.json()
     return result['status']
