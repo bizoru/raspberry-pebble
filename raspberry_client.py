@@ -3,7 +3,8 @@ import RPi.GPIO as GPIO
 import time
 import sys
 
-global url = "localhost:3412"
+global url
+url = "localhost:3412"
 
 if len(sys.argv) > 1:
     base_url = sys.argv[1]
