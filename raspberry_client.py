@@ -7,7 +7,7 @@ import sys
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(18,GPIO.OUT)
 
-def get_status():
+def get_status(url):
     url = "http://{}/status".format(url)
     r = requests.get(url)
     result = r.json()
@@ -16,7 +16,7 @@ def get_status():
 def monitor_status(url="localhost:3412"):
     while True:
         time.sleep(0.3)
-        status = get_status()
+        status = get_status(url)
         print "Got status {}".format(status)
         if status == "on":
             GPIO.output(18,GPIO.HIGH)
